@@ -12,18 +12,19 @@
     //console.log(Promise);
 
     /*function fn() {
-     let a = 10;
-     return function () {
-     let b =11;
-     return function () {
-     let c = 12;
-     return  function () {
-     console.log(a+b+c);
-     }
-     }
-     }
-     }
-     fn()()()()*/
+        let a = 10;
+        return function () {
+            let b = 11;
+            return function () {
+                let c = 12;
+                return function () {
+                    console.log(a + b + c);
+                }
+            }
+        }
+    }
+
+    console.log(fn()()()());*/
     // Promise : 有三个状态 ： pending（进行时）  fulfilled(成功态) rejected(失败态)
     // pending --> fulfilled
     // pending ---> rejected
@@ -55,8 +56,10 @@
         // 当reject时，次函数运行；
         console.log(2);
         console.log(val);
-    })
-    function timeout(ms) {
+    })*/
+
+
+    /*function timeout(ms) {
         return new Promise((resolve, reject) => {
             // setTimeout 的第三个参数是第一个回调函数的实参；
             setTimeout(resolve, ms, 'done');
@@ -64,7 +67,7 @@
     }
     timeout(100).then((value) => {
         console.log(value);// "done"
-    });*/
+    });
     // promise版的ajax;
     var promise;
     function getJSON(url) {// url : 路径；
@@ -96,7 +99,7 @@
         return promise;
     },function (a) {
         console.log(a);// OK
-    })
+    })*/
 
 </script>
 </body>
